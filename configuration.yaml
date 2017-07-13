@@ -1,30 +1,29 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Home
+  name: RadecicRidge
   # Location required to calculate the time the sun rises and sets
-  latitude: 32.9775
-  longitude: -117.0232
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 177
+  elevation: !secret homeassistant_elevation
   # metric for Metric, imperial for Imperial
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Los_Angeles
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
-
 # Enables configuration UI
 config:
 
 http:
   # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
+  api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
+  base_url: !secret http_base_url
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -33,19 +32,33 @@ http:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
   # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
+  include_used_components: true
+
+ios:
 
 # Discover some devices automatically
 discovery:
+  ignore:
+    - samsung_tv
+    - roku
+    - google_cast
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
 # Enables support for tracking state changes over time.
 history:
+  include:
+    domains:
+      - sensor
+      - switch
+      - media_player
+      - light
 
 # View all events in a logbook
 logbook:
+logger: !include logger.yaml
+#recorder: !include recorder.yaml
 
 # Track the sun
 sun:
@@ -57,6 +70,34 @@ sensor:
 # Text to speech
 tts:
   platform: google
+
+ifttt:
+  key: !secret ifttt_key
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-radecic
+  username: !secret MQTT_username
+  password: !secret MQTT_password
+
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+
+climate:
+  platform: nest
+
+wink:
+  email: !secret wink_username
+  password: !secret wink_password
+  client_id: !secret wink_client_id
+  client_secret: !secret wink_client_secret
+
+
+#######################################
+# includes
+#######################################
 
 group: !include groups.yaml
 automation: !include automations.yaml

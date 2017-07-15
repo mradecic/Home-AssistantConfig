@@ -1,0 +1,14 @@
+Network:
+  entities:
+    - sensor.ha_installed_version
+    - sensor.ha_uptime
+    - sensor.since_last_boot_templated
+    - sensor.disk_use_
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - binary_sensor.carlowink
+    - sensor.amazon_dot
+    - sensor.samsungtv
+    - sensor.chromecast_audio_1
+    - sensor.nest_upstairs
+    - sensor.nest_downstairs

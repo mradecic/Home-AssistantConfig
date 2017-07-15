@@ -64,9 +64,6 @@ logger: !include logger.yaml
 sun:
 
 # Weather Prediction
-sensor:
-  platform: yr
-
 # Text to speech
 tts:
   platform: google
@@ -102,14 +99,16 @@ camera:
 light:
   - platform: lifx
 
-media_player:
-  - platform: pioneer
-    host: 10.0.1.34
-    port: 8102
-
 #######################################
 # includes
 #######################################
 
-group: !include groups.yaml
-automation: !include automations.yaml
+group: !include_dir_merge_named group
+#device_tracker: !include_dir_merge_list device_tracker
+sensor: !include_dir_merge_list sensor
+#automation: !include_dir_merge_list automation
+#scene: !include_dir_merge_list scene
+#switch: !include_dir_merge_list switch
+#script: !include_dir_merge_named script
+#input_boolean: !include_dir_merge_named input_boolean
+#shell_command: !include_dir_merge_named shell_command

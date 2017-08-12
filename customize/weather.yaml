@@ -2,6 +2,7 @@
 ###################################
 ##  Nest Section
 ###################################
+
 climate.downstairs:
   friendly_name: 'Nest Downstairs'
   icon: mdi:air-conditioner

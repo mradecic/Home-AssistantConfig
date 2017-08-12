@@ -1,5 +1,0 @@
-light.kitchen 
-  friendly_name: 'Kitchen Island'
-  emulated_hue: False
-  hidden: False
-  homebridge_hidden: True

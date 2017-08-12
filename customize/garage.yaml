@@ -1,0 +1,15 @@
+switch.garage:
+  friendly_name: 'Garage Light'
+
+sensor.wink_relay_sensor_temperature:
+  friendly_name: 'Garage Temperature'
+
+sensor.wink_relay_sensor_humidity:
+  friendly_name: 'Garage Humidity'
+  icon: mdi:water-percent
+
+sensor.wink_relay_sensor_proximity:
+  friendly_name: 'Proximity Sensor'
+
+binary_sensor.wink_relay_sensor_presence:
+  friendly_name: 'Garage Motion'

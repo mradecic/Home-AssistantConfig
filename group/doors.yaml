@@ -1,0 +1,5 @@
+Doors:
+  entities:
+    - binary_sensor.front_door_opened
+    - binary_sensor.del_sur_room_opened
+    - binary_sensor.garage_door_opened

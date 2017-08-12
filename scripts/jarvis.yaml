@@ -1,0 +1,7 @@
+jarvis_script:
+  alias: Jarvis Greeting
+  sequence:
+    - service: tts.google_say
+      data:
+        entity_id: media_player.master_bedroom_home
+        message: Hello from Home Assistant

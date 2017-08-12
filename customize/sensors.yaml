@@ -1,0 +1,230 @@
+sensor.amazon_dot:
+  friendly_name: 'Amazon Dot'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:amazon
+
+sensor.Rad_iPhone7_battery_level:
+  friendly_name: 'Rad-iPhone7 Battery Level'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:battery-40
+
+sensor.Rad_iPhone7_battery_state:
+  friendly_name: 'Rad-iPhone7 Battery State'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:power-plug-off
+
+sensor.dark_sky_cloud_coverage:
+  friendly_name: 'Dark Sky Cloud Coverage'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:weather-partlycloudy
+
+sensor.dark_sky_daily_max_precip_intensity:
+  friendly_name: 'Dark Sky Daily Max Precip Intensity'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:thermometer
+
+sensor.dark_sky_humidity:
+  friendly_name: 'Outdoor Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+sensor.dark_sky_minutely_summary:
+  friendly_name: 'Current Conditions'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:beach
+
+sensor.dark_sky_precip_intensity:
+  friendly_name: 'Rainfall'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-rainy
+
+sensor.dark_sky_temperature:
+  friendly_name: 'Outdoor Temp'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+sensor.dark_sky_wind_speed:
+  friendly_name: 'Dark Sky Wind Speed'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:weather-windy
+
+sensor.date:
+  friendly_name: 'Date'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:calendar
+
+sensor.disk_use_:
+  friendly_name: 'Disk Usage'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:harddisk
+
+sensor.downstairs_away_mode:
+  friendly_name: 'Downstairs Away Mode'
+  emulated_hue: False
+  hidden: True
+
+sensor.downstairs_thermostat_humidity:
+  friendly_name: 'Downstairs Thermostat Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+sensor.downstairs_thermostat_hvac_state:
+  friendly_name: 'Downstairs Thermostat Hvac State'
+  emulated_hue: False
+  hidden: True
+
+sensor.downstairs_thermostat_operation_mode:
+  friendly_name: 'Downstairs Thermostat Operation Mode'
+  emulated_hue: False
+  hidden: True
+
+sensor.downstairs_thermostat_target:
+  friendly_name: 'Downstairs Thermostat Target'
+  emulated_hue: False
+  hidden: True
+
+sensor.downstairs_thermostat_temperature:
+  friendly_name: 'Downstairs Thermostat Temperature'
+  emulated_hue: False
+  hidden: True
+
+sensor.external_ip:
+  friendly_name: 'External Ip'
+  emulated_hue: False
+  hidden: True
+
+sensor.front_door:
+  friendly_name: 'Front Door'
+  emulated_hue: False
+  hidden: False
+
+sensor.ha_installed_version:
+  friendly_name: 'Ha Installed Version'
+  emulated_hue: False
+  hidden: False
+
+sensor.ha_uptime:
+  friendly_name: 'Ha Uptime'
+  emulated_hue: False
+  hidden: False
+
+sensor.ipchange:
+  friendly_name: 'Ipchange'
+  emulated_hue: False
+  hidden: True
+
+sensor.moon:
+  friendly_name: 'Moon'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:brightness-3
+
+sensor.samsungtv:
+  friendly_name: 'Samsung Tv'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:television
+
+sensor.since_last_boot:
+  friendly_name: 'Since Last Boot'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:clock
+
+sensor.since_last_boot_templated:
+  friendly_name: 'Raspberry Pi Uptime'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:clock-start
+
+sensor.speedtest_download:
+  friendly_name: 'Download'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:speedometer
+
+sensor.speedtest_upload:
+  friendly_name: 'Upload'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:speedometer
+
+sensor.speedtest_ping:
+  friendly_name: 'Ping'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:speedometer
+
+sensor.time:
+  friendly_name: 'Time'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:clock
+
+sensor.upstairs_away_mode:
+  friendly_name: 'Upstairs Away Mode'
+  emulated_hue: False
+  hidden: True
+
+sensor.upstairs_thermostat_humidity:
+  friendly_name: 'Upstairs Thermostat Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+sensor.upstairs_thermostat_hvac_state:
+  friendly_name: 'Upstairs Thermostat Hvac State'
+  emulated_hue: False
+  hidden: True
+
+sensor.upstairs_thermostat_operation_mode:
+  friendly_name: 'Upstairs Thermostat Operation Mode'
+  emulated_hue: False
+  hidden: True
+
+sensor.upstairs_thermostat_target:
+  friendly_name: 'Upstairs Thermostat Target'
+  emulated_hue: False
+  hidden: True
+
+sensor.upstairs_thermostat_temperature:
+  friendly_name: 'Upstairs Thermostat Temperature'
+  emulated_hue: False
+  hidden: True
+
+sensor.uv_burn_time:
+  friendly_name: 'Burn Time'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:fire
+
+sensor.uv_index:
+  friendly_name: 'Uv Index'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:white-balance-sunny
+
+sensor.uv_peak:
+  friendly_name: 'Peak Uv Index'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:white-balance-sunny
+
+sensor.uv_sun_advice:
+  friendly_name: 'Sun Advice'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:sunglasses

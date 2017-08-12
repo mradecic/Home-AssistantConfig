@@ -50,7 +50,7 @@ group.weather:
   homebridge_hidden: true
 
 group.doors:
-  friendly_nameL 'Doors'
+  friendly_name: 'Doors'
   emulated_hue: False
   hidden: False
   homebrige_hidden: true

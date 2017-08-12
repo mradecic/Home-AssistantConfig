@@ -1,0 +1,23 @@
+# Uses the Wink Relay to turn on lights and turn them off upstairs.
+
+- alias: 'Garage Light Turn on'
+  trigger:
+    - platform: event
+      event_type: garage_light_on
+    - platform: state
+      entity_id: binary_sensor.wink_relay_sensor_presence
+      to: 'on'
+  action:
+    service: switch.turn_on
+    entity_id: switch.garage
+
+- alias: 'Turn off Garage Light 10 minutes after last movement'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.wink_relay_sensor_presence
+    to: 'off'
+    for:
+      minutes: 1
+  action:
+    service: switch.turn_off
+    entity_id: switch.garage

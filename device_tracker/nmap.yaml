@@ -1,0 +1,3 @@
+- platform: nmap_tracker
+  hosts: 10.0.0.1/24
+  scan_options: " --privileged -sP "

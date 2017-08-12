@@ -1,0 +1,23 @@
+# Uses the Wink Relay to sense door open and play the door chime thru Sonos.
+
+- alias: 'Del Sur Room Door Open'
+  trigger:
+    - platform: event
+      event_type: door_open
+    - platform: state
+      entity_id: binary_sensor.del_sur_room_opened
+      to: 'on'
+#  action:
+#  - service: tts.google_say
+#    data:
+#      entity_id: media_player.Playroom
+#      message: Del Sur Room
+  action:
+    service: media_player.play_media
+    data_template:
+      entity_id:
+        - media_player.Playroom
+      media_content_id:
+        https://raw.githubusercontent.com/mradecic/Home-AssistantConfig/master/door_open.wav
+      media_content_type: audio/mp4
+

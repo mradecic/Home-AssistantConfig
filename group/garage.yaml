@@ -1,0 +1,7 @@
+Garage:
+  entities:
+    - switch.garage
+    - sensor.wink_relay_sensor_temperature
+    - sensor.wink_relay_sensor_humidity
+    - sensor.wink_relay_sensor_proximity
+    - binary_sensor.wink_relay_sensor_presence

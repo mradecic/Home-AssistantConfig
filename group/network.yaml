@@ -6,9 +6,13 @@ Network:
     - sensor.disk_use_
     - sensor.speedtest_download
     - sensor.speedtest_upload
-    - binary_sensor.carlowink
+    - sensor.speedtest_ping
+    - binary_sensor.radecicwink
     - sensor.amazon_dot
-    - sensor.samsungtv
-    - sensor.chromecast_audio_1
-    - sensor.nest_upstairs
-    - sensor.nest_downstairs
+    - sensor.pi_hole
+    - binary_sensor.downstairs_thermostat_online
+    - binary_sensor.upstairs_thermostat_online
+    - binary_sensor.upstairs_camera_reagancam_online
+    - binary_sensor.upstairs_camera_rorycam_online
+    - binary_sensor.upstairs_camera_babycam_online
+    - binary_sensor.downstairs_camera_playroom_online

@@ -1,27 +1,36 @@
 - platform: darksky
   api_key: !secret forecast_key
   monitored_conditions:
-#    - summary
+    - summary
 #    - precip_type
-    - precip_intensity
-    - precip_intensity_max
+#    - precip_intensity
+#    - precip_intensity_max
     - temperature
+    - temperature_max
+    - temperature_min
 #    - dew_point
     - wind_speed
-#    - wind_bearing
+    - wind_bearing
     - cloud_cover
     - humidity
-#    - nearest_storm_distance
+    - nearest_storm_distance
     - minutely_summary
 #    - pressure
-#    - visibility
+    - visibility
 #    - ozone
+  update_interval:
+    # At least one of these must be specified:
+    days: 0
+    hours: 0
+    minutes: 1
+    seconds: 30
+    milliseconds: 0
 
 - platform: nest
   monitored_conditions:
 #     - 'temperature'
 #     - 'target'
-     - 'humidity'
+      - 'humidity'
 #     - 'operation_mode'
 #     - 'last_connection'
 #     - 'co_status'

@@ -1,0 +1,14 @@
+- platform: template
+  sensors:
+      
+      amazon_dot:
+        friendly_name: 'Amazon Dot'
+        value_template: "{{ 'Online' if is_state('device_tracker.amazon_dot', 'home') else 'Offline' }}"
+      
+      nest_downstairs:
+        friendly_name: 'Downstairs Nest'
+        value_template: "{{ 'Online' if is_state('device_tracker.nest_downstairs', 'home') else 'Offline' }}"
+
+      nest_upstairs:
+        friendly_name: 'Upstairs Nest'
+        value_template: "{{ 'Online' if is_state('device_tracker.nest_upstairs', 'home') else 'Offline' }}"

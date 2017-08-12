@@ -1,0 +1,17 @@
+Bedroom Lights:
+  entities:
+    - light.matt_bedside_table
+    - light.chelsea_bedside_table
+
+Kitchen Lights:
+  entities:
+    - light.kitchen_pendant
+
+Living Room Lights:
+  entities: 
+    - light.great_room
+
+Front Entry Lights: 
+  entities: 
+    - light.front_entry_right
+    - light.front_entry_left

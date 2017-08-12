@@ -1,0 +1,33 @@
+#################################################################
+## Audio Notification Automations
+#################################################################
+
+        ##########################################################
+        ## Door Audio Notification
+        ##########################################################
+
+- alias: Notification Audio - Door Audio
+
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.front_door_opened
+      from: 'off'
+      to: 'on'
+
+  condition:
+#    - condition: state
+#      entity_id: group.household
+#      state: 'not_home'
+#    - condition: state
+#      entity_id: input_boolean.enable_security
+#      state: 'on'
+
+  action:
+    - service: script.turn_on
+      entity_id: script.say
+      data:
+        variables:
+          master: 'media_player.kitchen'
+          where: 'media_player.kitchen'
+          volume: '1'
+          what: 'Front Door Open'

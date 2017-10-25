@@ -1,0 +1,45 @@
+nest:
+  client_id: 9b7cee98-e484-4fb5-afe4-531e2761350d
+  client_secret: 8P85HF3KJjCKl0huiQNM6bR1u
+
+access_token: ig4VcTTVfAUBnMV0rOdcp5kRBIhbcDNQ
+refresh_token: kd9eqC1hg8Z5n4NE6INhY3vgZIXLyVJg
+
+switch.garage
+sensor.wink_relay_sensor_temperature
+sensor.wink_relay_sensor_proximity
+sensor.wink_relay_sensor_humidity
+binary_sensor.wink_relay_sensor_presence
+
+
+binary_sensor.front_door_opened
+binary_sensor.del_sur_room_opened
+binary_sensor.garage_door_opened
+
+Reagan's Room:
+  entities:
+    - light.reagan
+binary_sensor.upstairs_camera_reagancam_online
+binary_sensor.upstairs_camera_reagancam_sound_detected
+binary_sensor.upstairs_camera_reagancam_motion_detected
+binary_sensor.upstairs_camera_reagancam_person_detected
+
+binary_sensor.upstairs_camera_babycam_online
+binary_sensor.upstairs_camera_babycam_sound_detected
+binary_sensor.upstairs_camera_babycam_motion_detected
+binary_sensor.upstairs_camera_babycam_person_detected
+
+binary_sensor.upstairs_camera_rorycam_online
+binary_sensor.upstairs_camera_rorycam_motion_detected
+binary_sensor.upstairs_camera_rorycam_sound_detected
+binary_sensor.upstairs_camera_roryycam_person_detected
+
+binary_sensor.downstairs_camera_playroom_online
+binary_sensor.downstairs_camera_playroom_motion_detected
+binary_sensor.downstairs_camera_playroom_sound_detected
+binary_sensor.downstairs_camera_playroom_person_detected
+
+binary_sensor.downstairs_thermostat_online
+binary_sensor.upstairs_thermostat_online
+sensor.downstairs_thermostat
+sensor.upstairs_thermostat
